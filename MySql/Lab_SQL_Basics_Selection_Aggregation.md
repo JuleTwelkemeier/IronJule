@@ -100,7 +100,7 @@ select distinct
 FROM 
 	loan
 Order by
-	status asc; 
+	status desc; 
 
 ### Query 5
 

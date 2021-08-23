@@ -16,9 +16,31 @@ The ERD is pictured below - not all tables are shown, but many of the key fields
 
 1. Review the tables in the database.
 2. Explore tables by selecting all columns from each table or using the in built review features for your client.
-3. Select one column from a table. Get film titles.
+3. Select one column from a table. Get film titles. 
+ Result: 
+    select title from film
 4. Select one column from a table and alias it. Get unique list of film languages under the alias `language`. Note that we are not asking you to obtain the language per each film, but this is a good time to think about how you might get that information in the future.
+    
+result: 
+select 
+language_id,
+name as language
+from language
+
 5.
-* 5.1 Find out how many stores does the company have?
+* 5.1 Find out how many stores does the company have? 
+result: 
+select 
+count(distinct store_id)
+from store
 * 5.2 Find out how many employees staff does the company have? 
-* 5.3 Return a list of employee first names only?
+result: 
+select 
+count(distinct staff_id)
+from staff
+* 5.3 Return a list of employee first names only? 
+result:
+
+select 
+first_name
+from staff
